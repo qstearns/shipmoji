@@ -19,14 +19,19 @@ h2 {
 }
 
 .shipmoji {
-	width: 50%;
-	margin: auto;
-	text-align: center;
+	display: inline-block;
+	text-align: left;
 	font-family: 'Source Code Pro', monospace;
 	white-space: pre;
 	font-size: 1em;
+}
+
+.shipmoji-container {
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	background-color: #776ec4;
 	border: thin solid #e6e6fa;
 	border-radius: .2em;
 	padding: 15;
-	background-color: #776ec4
 }
