@@ -9,7 +9,7 @@ def serve():
     return send_from_directory('static', 'index.html')
 
 @app.route('/static/<path:path>')
-def send_assets():
+def send_assets(path):
     return send_from_directory('static', path)
 
 @app.route('/rand')
