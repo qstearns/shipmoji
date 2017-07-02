@@ -4,10 +4,19 @@
 	</head>
 	<body>
 		<h1> ShipMoji </h1>
-		<h2> The perfect emoji for every PR. </h2>
+		<h2> Don't use lame emojis. </h2>
 		<div class="shipmoji-container" >
-			<div class="shipmoji">🚢</div>
+			<div id="shipmoji" class="shipmoji"></div>
 		</div>
 	</body>
-</html>
+	<script>
+		setEmoji = (emoji) => {
+			el = document.querySelector("#shipmoji");
+			el.innerHTML = emoji;
+		};
 
+		emojiJson = fetch('/rand').then(resp => (
+			resp.json().then(json => { setEmoji(json.emoji); })
+		));
+	</script>
+</html>

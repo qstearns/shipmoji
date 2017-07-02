@@ -1,8 +1,11 @@
-from flask import Flask, url_for
+from flask import Flask, jsonify
+from emojis import emojis
+import random
+import yaml
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Your mom'
+@app.route('/rand')
+def rand():
+    return jsonify({ 'emoji': random.choice(emojis) })
 
