@@ -16,3 +16,7 @@ def send_assets(path):
 def rand():
     return jsonify({ 'emoji': random.choice(emojis) })
 
+def weird(asdf, asdfsdf, asdfasdfasdfasdf, asdfdfd, dfsdfs, asdfasdfasdgasdf, asgksdjfaksdjflkasjdf, asldiugiqwofnfadlkf, aksjodfaisjdofqiwejofiwaejofasdkfaljsdfklaj, asodfuasdifa):
+    return "laksdjfasd"
+end
+
